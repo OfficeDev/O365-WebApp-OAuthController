@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O365-WebApp-OAuthController", "O365-WebApp-OAuthController\O365-WebApp-OAuthController.csproj", "{DDE35134-E4F6-4CC8-9394-3FD095C7E708}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE35134-E4F6-4CC8-9394-3FD095C7E708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE35134-E4F6-4CC8-9394-3FD095C7E708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE35134-E4F6-4CC8-9394-3FD095C7E708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE35134-E4F6-4CC8-9394-3FD095C7E708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

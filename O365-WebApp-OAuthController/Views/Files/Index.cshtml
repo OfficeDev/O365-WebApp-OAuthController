@@ -1,0 +1,41 @@
+﻿@model IEnumerable<O365_WebApp_OAuthController.Models.MyFile>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h4>Your OneDrive Files</h4><br/>
+
+@if (ViewBag.ErrorMessage == "AuthorizationRequired")
+{
+    <p>You have to sign-in to Office 365 to see your OneDrive files.</p><br/>
+    <p>Click <a href="@ViewBag.AuthorizationUrl" title="here">here</a> to sign-in.</p>
+}
+else if (ViewBag.ErrorMessage == "UnexpectedError")
+{
+    <p class="text-danger">An unexpected error occurred while retrieving your profile. You may need to <a href="@ViewBag.AuthorizationUrl">sign-in again</a>.</p>
+}
+else
+{
+    <h4>Logged in as @ViewBag.Office365User</h4><br/>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+
