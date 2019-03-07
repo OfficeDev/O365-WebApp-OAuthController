@@ -1,3 +1,13 @@
+---
+topic: sample
+products:
+- Office 365
+languages:
+- C#
+extensions:
+  contentType: samples
+  createdDate: 12/29/2014 3:47:22 PM
+---
 Office 365 APIs Single Tenant Web Application
 ==============================================
 
